@@ -1,0 +1,6 @@
+.idea
+*.phar
+scratch*
+.DS_Store
+vendor/*
+releases

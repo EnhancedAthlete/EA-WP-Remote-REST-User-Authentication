@@ -1,0 +1,21 @@
+<phpunit
+        bootstrap="bootstrap.php"
+        backupGlobals="false"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true">
+    <testsuites>
+        <testsuite name="wordpress-develop">
+            <directory suffix="test.php">.</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../../trunk/</directory>
+            <exclude>
+                <directory suffix=".php">../../trunk/lib/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>
